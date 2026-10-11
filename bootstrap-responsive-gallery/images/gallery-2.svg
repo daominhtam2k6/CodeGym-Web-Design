@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+    <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#059669"/>
+            <stop offset="100%" stop-color="#84cc16"/>
+        </linearGradient>
+    </defs>
+    <rect width="800" height="520" fill="url(#g)"/>
+    <circle cx="180" cy="150" r="75" fill="#dcfce7" opacity="0.8"/>
+    <path d="M0 410 Q180 300 350 410 T800 360 L800 520 L0 520 Z" fill="#14532d" opacity="0.65"/>
+    <text x="50%" y="46%" text-anchor="middle" fill="white" font-family="Arial" font-size="48" font-weight="bold">Gallery 02</text>
+    <text x="50%" y="56%" text-anchor="middle" fill="white" font-family="Arial" font-size="24">Green Valley</text>
+</svg>
