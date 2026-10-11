@@ -1,0 +1,531 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>CreativeChronicle</title>
+
+
+    <!-- Bootstrap 5 -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="container py-4">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+                <a
+                    href="#"
+                    class="brand text-decoration-none"
+                >
+                    Creative<span>Chronicle</span>
+                </a>
+
+
+                <nav class="d-flex flex-wrap gap-3">
+
+                    <a
+                        href="#story"
+                        class="text-decoration-none text-dark fw-semibold"
+                    >
+                        Stories
+                    </a>
+
+                    <a
+                        href="#gallery"
+                        class="text-decoration-none text-dark fw-semibold"
+                    >
+                        Gallery
+                    </a>
+
+                    <a
+                        href="#recommended"
+                        class="text-decoration-none text-dark fw-semibold"
+                    >
+                        Recommended
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         ARTICLE
+         ===================================================== -->
+
+    <main
+        id="story"
+        class="container py-5"
+    >
+
+
+        <!-- ARTICLE HEADER -->
+
+        <section class="article-heading mb-4">
+
+            <span class="badge text-bg-dark mb-3">
+                Visual Culture
+            </span>
+
+            <h1 class="display-4 fw-bold">
+                Art, Space and the New Digital Canvas
+            </h1>
+
+            <p class="lead text-secondary col-lg-9">
+                Exploring how contemporary creators combine
+                traditional visual language with modern digital tools.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             AUTHOR INFO
+             FLEXBOX
+             ================================================= -->
+
+        <section class="author-section">
+
+            <div class="author-profile">
+
+                <div class="author-avatar">
+                    JD
+                </div>
+
+
+                <div class="author-details">
+
+                    <h2 class="h5 mb-1">
+                        Jane Doe
+                    </h2>
+
+                    <p class="mb-0 text-secondary small">
+                        Published on Oct 25, 2026 · 8 min read
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="share-buttons">
+
+                <button
+                    type="button"
+                    class="btn btn-outline-primary btn-sm"
+                >
+                    Share Facebook
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn-outline-dark btn-sm"
+                >
+                    Tweet
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARTICLE TEXT -->
+
+        <section class="article-copy my-5">
+
+            <p>
+                Creative work increasingly moves between physical
+                and digital spaces. Artists sketch on paper, refine
+                ideas on tablets, photograph textures and combine
+                them into visual experiences that are difficult to
+                classify using traditional categories.
+            </p>
+
+            <p>
+                A modern editorial layout therefore needs to support
+                content that changes naturally with the viewport.
+                The page should not depend on fixed positions or
+                artificial heights simply to preserve its shape.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             MOSAIC GALLERY
+             CSS GRID
+             ================================================= -->
+
+        <section
+            id="gallery"
+            class="mb-5"
+        >
+
+            <div class="section-heading mb-4">
+
+                <p class="text-uppercase text-secondary fw-semibold mb-2">
+                    CSS Grid / 2D Layout
+                </p>
+
+                <h2 class="fw-bold">
+                    Mosaic Gallery
+                </h2>
+
+            </div>
+
+
+            <div class="mosaic-gallery">
+
+                <figure class="photo-main">
+
+                    <img
+                        src="images/main-art.svg"
+                        alt="Main abstract artwork"
+                    >
+
+                    <figcaption>
+                        Experimental digital landscape
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="photo-sub">
+
+                    <img
+                        src="images/sub-art-1.svg"
+                        alt="Blue urban artwork"
+                    >
+
+                    <figcaption>
+                        Urban Blue
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="photo-sub">
+
+                    <img
+                        src="images/sub-art-2.svg"
+                        alt="Golden visual artwork"
+                    >
+
+                    <figcaption>
+                        Golden Story
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARTICLE BODY -->
+
+        <section class="article-copy mb-5">
+
+            <h2 class="fw-bold">
+                Layout should follow the content
+            </h2>
+
+            <p>
+                In the previous implementation, the gallery depended
+                on fixed coordinates. The images were removed from
+                the normal document flow, so the surrounding article
+                could not naturally respond to their real height.
+            </p>
+
+            <p>
+                CSS Grid solves the problem by keeping every image in
+                normal flow while still allowing the main artwork to
+                occupy more visual space. The layout remains readable
+                even when the viewport changes.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             RECOMMENDED ARTICLES
+             BOOTSTRAP GRID
+             ================================================= -->
+
+        <section
+            id="recommended"
+            class="py-4"
+        >
+
+            <div class="mb-4">
+
+                <p class="text-uppercase text-primary fw-semibold mb-2">
+                    Bootstrap Grid
+                </p>
+
+                <h2 class="fw-bold">
+                    Recommended Articles
+                </h2>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- ARTICLE 1 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100 shadow-sm border-0">
+
+                        <img
+                            src="images/article-1.svg"
+                            class="card-img-top"
+                            alt="Digital Art"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="badge text-bg-light mb-2">
+                                Digital
+                            </span>
+
+                            <h3 class="h5 card-title">
+                                The New Language of Digital Art
+                            </h3>
+
+                            <p class="card-text text-secondary small">
+                                How creators use software as a visual
+                                medium rather than just a production tool.
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-footer bg-white border-0">
+
+                            <a
+                                href="#"
+                                class="text-decoration-none fw-semibold"
+                            >
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ARTICLE 2 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100 shadow-sm border-0">
+
+                        <img
+                            src="images/article-2.svg"
+                            class="card-img-top"
+                            alt="Photography"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="badge text-bg-light mb-2">
+                                Photography
+                            </span>
+
+                            <h3 class="h5 card-title">
+                                Framing Everyday Landscapes
+                            </h3>
+
+                            <p class="card-text text-secondary small">
+                                Simple composition techniques that
+                                transform familiar spaces into stories.
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-footer bg-white border-0">
+
+                            <a
+                                href="#"
+                                class="text-decoration-none fw-semibold"
+                            >
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ARTICLE 3 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100 shadow-sm border-0">
+
+                        <img
+                            src="images/article-3.svg"
+                            class="card-img-top"
+                            alt="Color Theory"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="badge text-bg-light mb-2">
+                                Color
+                            </span>
+
+                            <h3 class="h5 card-title">
+                                Why Color Changes the Story
+                            </h3>
+
+                            <p class="card-text text-secondary small">
+                                Understanding how palettes influence
+                                emotion, rhythm and visual hierarchy.
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-footer bg-white border-0">
+
+                            <a
+                                href="#"
+                                class="text-decoration-none fw-semibold"
+                            >
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ARTICLE 4 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100 shadow-sm border-0">
+
+                        <img
+                            src="images/article-4.svg"
+                            class="card-img-top"
+                            alt="Modern Design"
+                        >
+
+                        <div class="card-body">
+
+                            <span class="badge text-bg-light mb-2">
+                                Design
+                            </span>
+
+                            <h3 class="h5 card-title">
+                                Designing With Less
+                            </h3>
+
+                            <p class="card-text text-secondary small">
+                                A practical look at clarity, whitespace
+                                and reduced visual noise.
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-footer bg-white border-0">
+
+                            <a
+                                href="#"
+                                class="text-decoration-none fw-semibold"
+                            >
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="bg-dark text-white mt-5">
+
+        <div class="container py-4">
+
+            <div class="d-flex justify-content-between flex-wrap gap-2">
+
+                <span>
+                    CreativeChronicle
+                </span>
+
+                <span class="text-white-50">
+                    Flexbox · CSS Grid · Bootstrap
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

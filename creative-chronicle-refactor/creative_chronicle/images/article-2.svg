@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+    <rect width="800" height="520" fill="#e0f2fe"/>
+    <path d="M0 430 L180 250 L350 420 L550 180 L800 400 L800 520 L0 520 Z" fill="#0284c7"/>
+    <circle cx="620" cy="115" r="60" fill="#fef9c3"/>
+    <text x="400" y="470" text-anchor="middle" fill="#0c4a6e" font-size="42" font-family="Arial" font-weight="bold">Photography</text>
+</svg>

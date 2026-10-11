@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+    <rect width="800" height="520" fill="#fff7ed"/>
+    <circle cx="250" cy="235" r="135" fill="#f97316"/>
+    <circle cx="475" cy="235" r="105" fill="#fb923c" opacity="0.75"/>
+    <circle cx="620" cy="235" r="70" fill="#fdba74"/>
+    <text x="400" y="470" text-anchor="middle" fill="#9a3412" font-size="42" font-family="Arial" font-weight="bold">Color Theory</text>
+</svg>

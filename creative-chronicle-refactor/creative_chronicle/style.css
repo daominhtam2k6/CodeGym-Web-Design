@@ -1,0 +1,307 @@
+﻿/* ==========================================================
+   CREATIVE CHRONICLE
+   Refactored Layout
+   ========================================================== */
+
+:root {
+    --surface: #ffffff;
+    --page: #f7f7f8;
+    --text: #18181b;
+    --muted: #71717a;
+    --line: #e4e4e7;
+    --accent: #7c3aed;
+}
+
+
+/* ==========================================================
+   BASE
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: var(--page);
+
+    color: var(--text);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+.site-header {
+    background: var(--surface);
+
+    border-bottom:
+        1px solid
+        var(--line);
+}
+
+.brand {
+    color: var(--text);
+
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+.brand span {
+    color: var(--accent);
+}
+
+
+/* ==========================================================
+   AUTHOR SECTION
+   CORRECT TOOL: FLEXBOX
+   ========================================================== */
+
+.author-section {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    padding:
+        18px
+        0;
+
+    border-top:
+        1px solid
+        var(--line);
+
+    border-bottom:
+        1px solid
+        var(--line);
+}
+
+
+/* Small Flex container for avatar + details */
+
+.author-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    min-width: 0;
+}
+
+.author-avatar {
+    width: 58px;
+    height: 58px;
+
+    flex: 0 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #ec4899
+        );
+
+    color: white;
+
+    font-weight: 800;
+}
+
+.author-details {
+    min-width: 0;
+}
+
+.share-buttons {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+/* ==========================================================
+   ARTICLE
+   ========================================================== */
+
+.article-copy {
+    max-width: 850px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.article-copy p {
+    margin-bottom: 22px;
+}
+
+
+/* ==========================================================
+   MOSAIC GALLERY
+   CORRECT TOOL: CSS GRID
+   ========================================================== */
+
+.mosaic-gallery {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(0, 1fr);
+
+    grid-template-rows:
+        repeat(2, minmax(190px, 1fr));
+
+    gap: 15px;
+}
+
+
+/* Main image spans exactly two rows */
+
+.photo-main {
+    grid-row: span 2;
+}
+
+.mosaic-gallery figure {
+    min-width: 0;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border-radius: 16px;
+
+    background: var(--surface);
+
+    box-shadow:
+        0 8px 24px
+        rgba(0, 0, 0, 0.07);
+}
+
+.mosaic-gallery img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 0;
+
+    display: block;
+
+    object-fit: cover;
+
+    flex: 1;
+}
+
+.mosaic-gallery figcaption {
+    padding:
+        12px
+        15px;
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   BOOTSTRAP RECOMMENDED CARDS
+   ========================================================== */
+
+.card-img-top {
+    aspect-ratio: 16 / 10;
+
+    object-fit: cover;
+}
+
+.card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+    .mosaic-gallery {
+        grid-template-columns:
+            minmax(0, 1.5fr)
+            minmax(0, 1fr);
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   Target: 375px
+   ========================================================== */
+
+@media (max-width: 576px) {
+
+    .author-section {
+        align-items: flex-start;
+    }
+
+    .share-buttons {
+        width: 100%;
+    }
+
+    .mosaic-gallery {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+    }
+
+    .photo-main {
+        grid-row: auto;
+    }
+
+    .mosaic-gallery img {
+        aspect-ratio: 4 / 3;
+
+        height: auto;
+    }
+
+    .article-copy {
+        font-size: 16px;
+    }
+
+}
