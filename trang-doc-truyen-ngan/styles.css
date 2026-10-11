@@ -1,0 +1,355 @@
+﻿/* ==========================================================
+   RESET CO BAN
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background-color: #f4f1ea;
+
+    color: #303030;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+}
+
+
+/* ==========================================================
+   TRANG CHINH
+   ========================================================== */
+
+.page {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 8px 30px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================================
+   PHAN DAU TRANG
+   ========================================================== */
+
+.story-header {
+    text-align: center;
+}
+
+.story-cover {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.story-header h1 {
+    margin:
+        32px
+        20px
+        10px;
+
+    color: #17365d;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 38px;
+
+    text-align: center;
+}
+
+.story-description {
+    margin:
+        0
+        auto
+        30px;
+
+    padding:
+        0
+        30px;
+
+    color: #6a6a6a;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   MUC LUC
+   ========================================================== */
+
+.table-of-contents {
+    margin:
+        25px
+        45px;
+
+    padding:
+        20px
+        30px;
+
+    border:
+        1px solid
+        #b7c7d9;
+
+    border-radius: 8px;
+
+    background-color: #eef4fa;
+}
+
+.table-of-contents h2 {
+    margin-top: 0;
+
+    color: #17365d;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   THE H5 CHO TUNG MUC LUC
+   ========================================================== */
+
+.table-of-contents h5 {
+    margin:
+        8px
+        0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+
+    font-weight: normal;
+}
+
+
+/* ==========================================================
+   LIEN KET MUC LUC
+   ========================================================== */
+
+.table-of-contents a {
+    display: block;
+
+    padding:
+        10px
+        14px;
+
+    border-radius: 5px;
+
+    color: #24598c;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        padding-left 0.2s;
+}
+
+
+/* ==========================================================
+   HOVER
+   ========================================================== */
+
+.table-of-contents a:hover {
+    padding-left: 22px;
+
+    background-color: #d9e9f7;
+
+    color: #0b3761;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================================
+   NOI DUNG TRUYEN
+   ========================================================== */
+
+.story-content {
+    padding:
+        10px
+        55px
+        40px;
+}
+
+.story-section {
+    padding-top: 20px;
+
+    scroll-margin-top: 20px;
+}
+
+.story-section h2 {
+    margin-top: 20px;
+
+    padding-bottom: 10px;
+
+    border-bottom:
+        2px solid
+        #d9e2ec;
+
+    color: #294f75;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 24px;
+}
+
+
+/* ==========================================================
+   DOAN VAN TRUYEN
+   ========================================================== */
+
+.story-section p {
+    margin:
+        16px
+        0;
+
+    color: #303030;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+    text-indent: 45px;
+}
+
+
+/* ==========================================================
+   LINK VE DAU TRANG
+   ========================================================== */
+
+.back-to-top {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #34699a;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    color: #17365d;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+    padding:
+        18px
+        20px;
+
+    background-color: #17365d;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE CO BAN
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+    .page {
+        width: 100%;
+
+        margin: 0;
+
+        box-shadow: none;
+    }
+
+    .story-header h1 {
+        font-size: 30px;
+    }
+
+    .table-of-contents {
+        margin:
+            20px
+            15px;
+
+        padding:
+            16px;
+    }
+
+    .story-content {
+        padding:
+            10px
+            20px
+            30px;
+    }
+
+    .story-section p {
+        font-size: 17px;
+
+        text-indent: 30px;
+    }
+}

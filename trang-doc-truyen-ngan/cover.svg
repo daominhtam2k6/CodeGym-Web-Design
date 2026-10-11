@@ -1,0 +1,80 @@
+﻿<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1200"
+    height="500"
+    viewBox="0 0 1200 500"
+>
+    <defs>
+        <linearGradient
+            id="background"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop
+                offset="0%"
+                stop-color="#16213e"
+            />
+
+            <stop
+                offset="100%"
+                stop-color="#0f3460"
+            />
+        </linearGradient>
+    </defs>
+
+    <rect
+        width="1200"
+        height="500"
+        fill="url(#background)"
+    />
+
+    <circle
+        cx="950"
+        cy="105"
+        r="58"
+        fill="#f7e7a9"
+    />
+
+    <path
+        d="M0 380 L180 270 L330 350 L490 230 L650 365 L820 250 L1030 360 L1200 270 L1200 500 L0 500 Z"
+        fill="#10182f"
+    />
+
+    <rect
+        x="135"
+        y="238"
+        width="12"
+        height="145"
+        fill="#222"
+    />
+
+    <path
+        d="M141 235 Q190 210 205 255 Q190 295 141 275 Z"
+        fill="#f6c453"
+    />
+
+    <text
+        x="600"
+        y="155"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="Georgia, serif"
+        font-size="56"
+        font-weight="bold"
+    >
+        CHIẾC ĐÈN TRONG MƯA
+    </text>
+
+    <text
+        x="600"
+        y="215"
+        text-anchor="middle"
+        fill="#d7e3f4"
+        font-family="Arial, sans-serif"
+        font-size="24"
+    >
+        Một truyện ngắn về lòng tốt và hy vọng
+    </text>
+</svg>
